@@ -3,6 +3,8 @@ $secondary-color: rgb(0, 123, 181);
 $show-home-image: true;
 $home-image: url(../img/Backgroundfeature.jpg);
 $background-opacity: 0.5;
+
+
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
@@ -27,6 +29,18 @@ $background-opacity: 0.5;
     }
   }
 }
+
+// Set Text Color
+@function set-text-color($color){
+    @if (lightness($color) > 40) {
+        @return #000;
+    } @else{
+        @return #fff;
+    }
+
+}
+
+
 //Media Query Mixins
 
 @mixin mediaSm {
@@ -51,3 +65,4 @@ $background-opacity: 0.5;
     @content;
   }
 }
+
