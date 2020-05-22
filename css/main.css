@@ -213,6 +213,8 @@ main {
       color: #fff; }
       .boxes div:hover span {
         color: #fff; }
+  .boxes footer {
+    bottom: 0; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
